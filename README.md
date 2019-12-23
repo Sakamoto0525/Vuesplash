@@ -24,9 +24,9 @@ $ npm run watch
 
 ```bash
 $ docker-compose exec app sh
-$ fixer
+$ composer fixer
 # 自動整形せず整形必要箇所のみ出力したいならこっち
-$ fixer --dry-run
+$ composer fixer --dry-run
 ```
 [php-cs-fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
 
@@ -34,7 +34,7 @@ $ fixer --dry-run
 
 ```bash
 $ docker-compose exec app sh
-$ sniffer
+$ composer sniffer
 # コーディング規約としてPSR12を指定している
 ```
 [php_codesniffer](https://github.com/squizlabs/php_codesniffer)
