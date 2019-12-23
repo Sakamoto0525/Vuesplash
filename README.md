@@ -8,9 +8,12 @@ $ docker-compose build
 ## 各コンテナの起動
 ```bash
 $ docker-compose up
+```
 
-# Vue.js自動Compiling起動
+## Vue.jsビルド・起動
+```bash
 $ docker-compose exec app sh
+$ npm run dev
 $ npm run watch
 ```
 [localhost](localhost)で確認できる
