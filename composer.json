@@ -60,10 +60,16 @@
             "@php artisan key:generate --ansi"
         ],
         "fixer": [
+            "./vendor/bin/php-cs-fixer fix -v --dry-run"
+        ],
+        "fixer--fix": [
             "./vendor/bin/php-cs-fixer fix -v"
         ],
         "sniffer": [
             "./vendor/bin/phpcs --standard=phpcs.xml ./"
+        ],
+        "sniffer--fix": [
+            "./vendor/bin/phpcbf --standard=phpcs.xml ./"
         ]
     }
 }
