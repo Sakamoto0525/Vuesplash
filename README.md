@@ -18,13 +18,24 @@ $ npm run watch
 ```
 [localhost](localhost)で確認できる
 
-## PHPコード整形
-```
-# vendor/bin/php-cs-fixer fix -v --dry-run
+## PHPコード整形実行
+
+#### fixer
+
+```bash
+$ docker-compose exec app sh
+$ fixer
+# 自動整形せず整形必要箇所のみ出力したいならこっち
+$ fixer --dry-run
 ```
 [php-cs-fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
 
-```
+#### sniffer
 
+```bash
+$ docker-compose exec app sh
+$ sniffer
+# コーディング規約としてPSR12を指定している
 ```
+[php_codesniffer](https://github.com/squizlabs/php_codesniffer)
 
