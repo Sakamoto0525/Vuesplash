@@ -1,22 +1,31 @@
 <?php
 
+/*
+ * This file is part of PHP CS Fixer.
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *     Dariusz Rumiński <dariusz.ruminski@gmail.com>
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Tests\Feature;
 
-use App\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
-class DemoTest extends TestCase
+/**
+ * @internal
+ * @coversNothing
+ */
+final class DemoTest extends TestCase
 {
     use RefreshDatabase;
+
     /**
      * A basic feature test example.
-     *
-     * @return void
      */
-    public function test_テストDB接続確認()
+    public function testテストDB接続確認()
     {
-        $this->assertEquals('testing', $this->app->environment());
+        static::assertSame('testing', $this->app->environment());
     }
 }

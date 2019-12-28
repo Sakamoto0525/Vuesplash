@@ -14,9 +14,9 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
@@ -77,7 +77,9 @@ class RegisterController extends Controller
     }
 
     /**
-     * 会員登録
+     * 会員登録.
+     *
+     * @param mixed $user
      */
     protected function registered(Request $request, $user)
     {
