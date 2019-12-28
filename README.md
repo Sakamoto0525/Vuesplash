@@ -54,7 +54,6 @@ $ composer sniffer
 ```bash
 $ docker-compose exec app sh
 $ npm run lint--fix
-# コーディング規約としてPSR12を指定している
 # 自動整形せず整形必要箇所のみ出力したいならこっち
 $ npm run lint
 ```
