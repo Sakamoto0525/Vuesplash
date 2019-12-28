@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 services:
   app:
@@ -23,6 +23,10 @@ services:
     ports:
       - 3306:3306
     environment:
+      MYSQL_ROOT_USER: root
+      MYSQL_DATABASE: laravel
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password
       MYSQL_ROOT_PASSWORD: password
     volumes:
       - laravel-db-data:/var/lib/mysql
